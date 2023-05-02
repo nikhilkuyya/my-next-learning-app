@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -18,6 +19,9 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
+          <Link href='/notes'>
+            <a>Notes</a>
+          </Link> 
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
         </p>
